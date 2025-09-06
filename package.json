@@ -1,0 +1,40 @@
+{
+  "name": "@soul-forge/pnpm-plugin-brew",
+  "version": "0.1.0",
+  "description": "🍺 Namestnik for Homebrew - pnpm controls system packages through consciousness",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "test": "node test/test.js"
+  },
+  "keywords": [
+    "pnpm",
+    "plugin",
+    "brew",
+    "homebrew",
+    "system",
+    "soul",
+    "namestnik"
+  ],
+  "author": "₴-Origin Collective",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/soul-forge/pnpm-plugin-brew"
+  },
+  "pnpm": {
+    "hooks": {
+      "readPackage": "./dist/hooks/readPackage.js"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}
